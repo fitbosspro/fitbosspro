@@ -57,6 +57,7 @@ header {
             letter-spacing: -0.5px;
         }
 
+        
         .logo a {
             text-decoration: none;
             color: white;
@@ -162,8 +163,7 @@ header {
             letter-spacing: -0.5px;
             width: 100%;
             margin-left: 10px;
-            margin-right: 10px;
-        }
+            }
 
         .article-meta {
             display: flex;
@@ -675,6 +675,12 @@ header {
             font-size: 0.8rem;
             width: 100%;
         }
+@media (max-width: 767px) {
+    .article-header h1 {
+                font-size: 1.5rem;
+            }
+  /* Mobile styles */
+}
 
         /* Tablet and up */
         @media (min-width: 768px) {
