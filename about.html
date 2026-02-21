@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | FitBoss Pro - Evidence-Based Fitness Information</title>
+    
+    <!-- Meta Properties -->
+    <meta name="description" content="FitBoss Pro translates complex fitness research into actionable advice. Learn about our mission to provide evidence-based information without the hype.">
+    <meta name="keywords" content="about FitBoss Pro, fitness blog mission, evidence based fitness, science backed workouts">
+    <meta name="author" content="FitBoss Pro">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About Us | FitBoss Pro">
+    <meta property="og:description" content="FitBoss Pro translates complex fitness research into actionable advice. Learn about our mission to provide evidence-based information without the hype.">
+    <meta property="og:image" content="https://fitbosspro.com/img/about-us-2026.webp">
+    <meta property="og:url" content="https://fitbosspro.com/about">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FitBoss Pro">
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://fitbosspro.com/about">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://fitbosspro.com/favicon.ico">
+    <link rel="apple-touch-icon" href="https://fitbosspro.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://fitbosspro.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://fitbosspro.com/favicon-16x16.png">
+    
+    <!-- Schema Markup - AboutPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About FitBoss Pro",
+        "description": "FitBoss Pro translates complex fitness research into actionable advice. Evidence-based information without the hype.",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "FitBoss Pro",
+            "url": "https://fitbosspro.com",
+            "logo": "https://fitbosspro.com/logo.png",
+            "sameAs": [
+                "https://www.facebook.com/fitbosspro",
+                "https://www.instagram.com/fitbosspro",
+                "https://twitter.com/fitbosspro",
+                "https://www.youtube.com/fitbosspro"
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fitbosspro.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "About Us",
+                "item": "https://fitbosspro.com/about"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Font Awesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Base styles (same as articles) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background-color: #fafafa;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Site Header */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 0.8rem 0;
+            /* position: sticky; */
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #ffd700;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        .nav-links.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 1rem 0;
+            gap: 1rem;
+            list-style: none;
+            z-index: 999;
+        }
+
+        .nav-links.active li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav-links.active a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        /* Page Container */
+        .page-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            margin-bottom: 2rem;
+            font-size: 0.85rem;
+            color: #666;
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 0.3rem;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .breadcrumbs a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+
+        .breadcrumbs span {
+            margin: 0 0.3rem;
+            color: #999;
+        }
+
+        /* Page Header */
+        .page-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .page-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Mission Cards */
+        .mission-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            width: 100%;
+        }
+
+        .mission-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            width: 100%;
+        }
+
+        .mission-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .mission-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .mission-header h2 {
+            font-size: 1.3rem;
+            margin: 0;
+            color: #1a1a1a;
+        }
+
+        .mission-card p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        /* Value Cards */
+        .value-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            width: 100%;
+        }
+
+        .value-card {
+            background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+            padding: 1.2rem;
+            border-radius: 10px;
+            border-left: 4px solid #2a5298;
+            width: 100%;
+        }
+
+        .value-card h3 {
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .value-card p {
+            color: #555;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* Team Cards */
+        .team-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            width: 100%;
+        }
+
+        .team-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            width: 100%;
+            text-align: center;
+        }
+
+        .team-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            margin: 0 auto 1rem;
+        }
+
+        .team-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+            color: #1a1a1a;
+        }
+
+        .team-title {
+            color: #2a5298;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .team-bio {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Stats Cards */
+        .stats-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            width: 100%;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+            text-align: center;
+            width: 100%;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2a5298;
+            line-height: 1.2;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Timeline */
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            width: 100%;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+            width: 100%;
+        }
+
+        .timeline-year {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2a5298;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-desc {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .cta-section p {
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: #ffd700;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 2rem 1rem 1rem;
+            margin-top: 3rem;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+        }
+
+        .footer-section {
+            width: 100%;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 0.8rem;
+            color: #ffd700;
+            font-size: 1.1rem;
+        }
+
+        .footer-section p {
+            margin-bottom: 0.5rem;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.4rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #333;
+            color: #ccc;
+            font-size: 0.8rem;
+            width: 100%;
+        }
+
+        /* Tablet and up */
+        @media (min-width: 768px) {
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .hamburger {
+                display: none;
+            }
+            
+            .nav-links {
+                display: flex;
+                list-style: none;
+                gap: 1.5rem;
+                position: static;
+                width: auto;
+                background: transparent;
+                padding: 0;
+            }
+            
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                font-size: 0.9rem;
+            }
+            
+            .page-header h1 {
+                font-size: 2.8rem;
+            }
+            
+            .mission-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            
+            .value-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+            }
+            
+            .team-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            
+            .stats-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.5rem;
+            }
+            
+            .footer-content {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fit<span>Boss</span> Pro</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="https://fitbosspro.com/">Home</a></li>
+                <li><a href="https://fitbosspro.com/category/strength">Strength Training</a></li>
+                <li><a href="https://fitbosspro.com/category/cardio">Cardio</a></li>
+                <li><a href="https://fitbosspro.com/category/nutrition">Nutrition</a></li>
+                <li><a href="https://fitbosspro.com/category/mindset">Mindset</a></li>
+                <li><a href="https://fitbosspro.com/category/recovery">Recovery</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="https://fitbosspro.com/">Home</a>
+            <span>›</span>
+            <span>About Us</span>
+        </div>
+
+        <!-- Page Header -->
+        <header class="page-header">
+            <h1>About FitBoss Pro</h1>
+            <p>We translate complex fitness research into actionable advice. No hype, no bro-science — just evidence-based information you can use.</p>
+        </header>
+
+        <!-- Mission Section -->
+        <div class="mission-grid">
+            <div class="mission-card">
+                <div class="mission-header">
+                    <div class="mission-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h2>Our Mission</h2>
+                </div>
+                <p>To cut through the noise of the fitness industry and provide clear, science-backed information that helps people achieve their health and fitness goals without wasting time on ineffective methods.</p>
+            </div>
+            
+            <div class="mission-card">
+                <div class="mission-header">
+                    <div class="mission-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h2>Our Vision</h2>
+                </div>
+                <p>A world where fitness decisions are based on evidence, not marketing. Where everyone has access to accurate, understandable information about exercise, nutrition, and recovery.</p>
+            </div>
+        </div>
+
+        <!-- Story Section -->
+        <div style="margin: 2rem 0;">
+            <h2 style="font-size: 1.6rem; margin-bottom: 1rem; color: #1a1a1a;">Our Story</h2>
+            <p style="margin-bottom: 1rem; color: #555;">FitBoss Pro was founded in 2026 by a team of fitness enthusiasts frustrated with the misinformation dominating the industry. We saw too many people following ineffective workouts, wasting money on useless supplements, and getting injured from bad advice.</p>
+            <p style="margin-bottom: 1rem; color: #555;">We started FitBoss Pro to bridge the gap between academic research and everyday fitness. Our team reads the latest studies, filters out the noise, and presents the findings in a way that's actually useful for real people.</p>
+            <p style="color: #555;">Today, we're proud to be a trusted source for evidence-based fitness information, helping thousands of readers make smarter decisions about their health.</p>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Research Articles</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100k+</div>
+                <div class="stat-label">Monthly Readers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">200+</div>
+                <div class="stat-label">Studies Reviewed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">2026</div>
+                <div class="stat-label">Founded</div>
+            </div>
+        </div>
+
+        <!-- Values Section -->
+        <h2 style="font-size: 1.6rem; margin: 2rem 0 1rem; color: #1a1a1a;">Our Core Values</h2>
+        <div class="value-grid">
+            <div class="value-card">
+                <h3><i class="fas fa-flask"></i> Evidence-Based</h3>
+                <p>Every article is backed by peer-reviewed research, not anecdotes or marketing claims. We cite our sources and update content as new evidence emerges.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3><i class="fas fa-hand-holding-heart"></i> Practical & Actionable</h3>
+                <p>We don't just tell you what the research says — we tell you what to do with it. Our advice is designed to be implemented in real life.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3><i class="fas fa-ban"></i> No Hype</h3>
+                <p>No miracle supplements, no "secret" workouts, no bro-science. Just honest, straightforward information you can trust.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3><i class="fas fa-users"></i> Inclusive</h3>
+                <p>Fitness is for everyone. We provide information that works for all ages, genders, backgrounds, and fitness levels.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3><i class="fas fa-leaf"></i> Sustainable</h3>
+                <p>We promote approaches that are sustainable for life, not quick fixes that lead to burnout and quitting.</p>
+            </div>
+            
+            <div class="value-card">
+                <h3><i class="fas fa-heart"></i> Health First</h3>
+                <p>Aesthetics are secondary to health. We prioritize approaches that support long-term well-being.</p>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <h2 style="font-size: 1.6rem; margin: 2rem 0 1rem; color: #1a1a1a;">Meet the Team</h2>
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Dr. James Wilson</h3>
+                <div class="team-title">Lead Researcher, PhD Exercise Science</div>
+                <p class="team-bio">Dr. Wilson has published over 30 peer-reviewed articles on strength training and muscle hypertrophy. He translates complex research into practical advice.</p>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Sarah Chen</h3>
+                <div class="team-title">Head of Nutrition, MS Nutrition</div>
+                <p class="team-bio">Sarah specializes in sports nutrition and weight management. She helps readers navigate the confusing world of diet advice with evidence-based guidance.</p>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Mike Torres</h3>
+                <div class="team-title">Strength Coach, CSCS</div>
+                <p class="team-bio">Mike has coached athletes at all levels for 15 years. He brings practical experience to our workout programming and exercise technique articles.</p>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Dr. Emily Parker</h3>
+                <div class="team-title">Recovery Specialist, PT, DPT</div>
+                <p class="team-bio">Dr. Parker is a physical therapist specializing in injury prevention and recovery. She ensures our recovery advice is both effective and safe.</p>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <h2 style="font-size: 1.6rem; margin: 2rem 0 1rem; color: #1a1a1a;">Our Journey</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">January 2026</div>
+                <div class="timeline-desc">FitBoss Pro founded with a mission to provide evidence-based fitness information.</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">February 2026</div>
+                <div class="timeline-desc">Published first articles on strength training, cardio, and nutrition. Readers respond positively to the science-backed approach.</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">March 2026</div>
+                <div class="timeline-desc">Reached 10,000 monthly readers. Expanded team to include nutrition and recovery specialists.</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">Today</div>
+                <div class="timeline-desc">Trusted source for fitness information with 100,000+ monthly readers and growing.</div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>Ready to Transform Your Fitness Journey?</h2>
+            <p>Explore our evidence-based articles and start making smarter decisions about your health.</p>
+            <a href="https://fitbosspro.com/" class="cta-button">Browse Articles</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About FitBoss Pro</h3>
+                <p>Evidence-based fitness information. Translating complex research into actionable advice.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="https://fitbosspro.com/">Home</a></p>
+                <p><a href="https://fitbosspro.com/about">About Us</a></p>
+                <p><a href="https://fitbosspro.com/contact">Contact</a></p>
+                <p><a href="https://fitbosspro.com/privacy-policy">Privacy Policy</a></p>
+                <p><a href="https://fitbosspro.com/terms-of-service">Terms of Service</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="https://fitbosspro.com/category/strength">Strength Training</a></li>
+                    <li><a href="https://fitbosspro.com/category/cardio">Cardio</a></li>
+                    <li><a href="https://fitbosspro.com/category/nutrition">Nutrition</a></li>
+                    <li><a href="https://fitbosspro.com/category/mindset">Mindset</a></li>
+                    <li><a href="https://fitbosspro.com/category/recovery">Recovery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FitBoss Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

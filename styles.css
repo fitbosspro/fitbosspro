@@ -37,6 +37,8 @@ header {
     position: relative;       /* Normal flow */
     top: auto;               /* Reset any top positioning */
     z-index: auto;           /* Reset z-index */
+    border-radius: 15px;
+    border: 1px solid #eaeaea;
 }
 
         nav {
@@ -144,6 +146,7 @@ header {
             font-weight: 600;
             letter-spacing: 0.5px;
             margin-bottom: 1rem;
+            margin-left: 10px;
         }
 
         .article-header h1 {
@@ -154,6 +157,8 @@ header {
             font-weight: 700;
             letter-spacing: -0.5px;
             width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
         }
 
         .article-meta {
@@ -164,6 +169,7 @@ header {
             padding-bottom: 1.5rem;
             border-bottom: 1px solid #eaeaea;
             width: 100%;
+            margin-left: 10px;
         }
 
         .meta-item {
@@ -183,6 +189,7 @@ header {
             align-items: center;
             gap: 0.8rem;
             width: 100%;
+            margin-left: 10px;
         }
 
         .author-avatar {

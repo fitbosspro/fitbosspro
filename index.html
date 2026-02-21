@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBoss Pro | Evidence-Based Fitness Information</title>
+    
+    <!-- Meta Properties -->
+    <meta name="description" content="FitBoss Pro translates complex fitness research into actionable advice. Evidence-based articles on strength training, cardio, nutrition, mindset, and recovery.">
+    <meta name="keywords" content="fitness, evidence based fitness, strength training, cardio, nutrition, mindset, recovery">
+    <meta name="author" content="FitBoss Pro">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="FitBoss Pro | Evidence-Based Fitness Information">
+    <meta property="og:description" content="FitBoss Pro translates complex fitness research into actionable advice. Evidence-based articles on strength training, cardio, nutrition, mindset, and recovery.">
+    <meta property="og:image" content="https://fitbosspro.com/img/home-2026.webp">
+    <meta property="og:url" content="https://fitbosspro.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FitBoss Pro">
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://fitbosspro.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://fitbosspro.com/favicon.ico">
+    <link rel="apple-touch-icon" href="https://fitbosspro.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://fitbosspro.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://fitbosspro.com/favicon-16x16.png">
+    
+    <!-- Schema Markup - WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "FitBoss Pro",
+        "url": "https://fitbosspro.com",
+        "description": "Evidence-based fitness information. Translating complex research into actionable advice.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "FitBoss Pro",
+            "logo": "https://fitbosspro.com/logo.png"
+        }
+    }
+    </script>
+    
+    <!-- Font Awesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background-color: #fafafa;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Site Header */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #ffd700;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        .nav-links.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 1rem 0;
+            gap: 1rem;
+            list-style: none;
+            z-index: 999;
+        }
+
+        .nav-links.active li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav-links.active a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .hero-stats span {
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .hero-stats i {
+            margin-right: 0.3rem;
+            color: #ffd700;
+        }
+
+        /* Page Container */
+        .page-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Category Section */
+        .category-section {
+            margin: 3rem 0;
+        }
+
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .category-header h2 {
+            font-size: 1.6rem;
+            color: #1a1a1a;
+        }
+
+        .category-header a {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .category-header a:hover {
+            color: #1e3c72;
+        }
+
+        /* Articles Grid */
+        .articles-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            width: 100%;
+            transition: transform 0.3s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .article-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .article-category-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .article-content {
+            padding: 1.5rem;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+            color: #1a1a1a;
+            line-height: 1.4;
+        }
+
+        .article-content h3 a {
+            color: #1a1a1a;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .article-content h3 a:hover {
+            color: #2a5298;
+        }
+
+        .article-excerpt {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 1rem;
+        }
+
+        .article-meta i {
+            color: #2a5298;
+            margin-right: 0.3rem;
+        }
+
+        .article-link {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .article-link:hover {
+            color: #1e3c72;
+        }
+
+        /* Featured Article */
+        .featured-article {
+            background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border: 1px solid #eaeaea;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .featured-label {
+            display: inline-block;
+            background: #ffd700;
+            color: #1a1a1a;
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            width: fit-content;
+        }
+
+        .featured-content {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .featured-content h2 {
+            font-size: 1.8rem;
+            color: #1a1a1a;
+            line-height: 1.3;
+        }
+
+        .featured-excerpt {
+            color: #555;
+            font-size: 1rem;
+            max-width: 800px;
+        }
+
+        .featured-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .featured-meta i {
+            color: #2a5298;
+            margin-right: 0.3rem;
+        }
+
+        .read-more-btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            width: fit-content;
+            transition: transform 0.3s;
+        }
+
+        .read-more-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .newsletter-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .newsletter-section p {
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            padding: 1rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .newsletter-form button {
+            padding: 1rem;
+            background: #ffd700;
+            color: #1a1a1a;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .newsletter-form button:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 2rem 1rem 1rem;
+            margin-top: 3rem;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+        }
+
+        .footer-section {
+            width: 100%;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 0.8rem;
+            color: #ffd700;
+            font-size: 1.1rem;
+        }
+
+        .footer-section p {
+            margin-bottom: 0.5rem;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.4rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #333;
+            color: #ccc;
+            font-size: 0.8rem;
+            width: 100%;
+        }
+
+        /* Tablet and up */
+        @media (min-width: 768px) {
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .hamburger {
+                display: none;
+            }
+            
+            .nav-links {
+                display: flex;
+                list-style: none;
+                gap: 1.5rem;
+                position: static;
+                width: auto;
+                background: transparent;
+                padding: 0;
+            }
+            
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                font-size: 0.9rem;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .articles-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+            
+            .featured-content {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            
+            .newsletter-form {
+                flex-direction: row;
+            }
+            
+            .newsletter-form input {
+                flex: 1;
+            }
+            
+            .footer-content {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .articles-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fit<span>Boss</span> Pro</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="https://fitbosspro.com/">Home</a></li>
+                <li><a href="https://fitbosspro.com/category/strength">Strength Training</a></li>
+                <li><a href="https://fitbosspro.com/category/cardio">Cardio</a></li>
+                <li><a href="https://fitbosspro.com/category/nutrition">Nutrition</a></li>
+                <li><a href="https://fitbosspro.com/category/mindset">Mindset</a></li>
+                <li><a href="https://fitbosspro.com/category/recovery">Recovery</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Evidence-Based Fitness Information</h1>
+            <p>We translate complex research into actionable advice. No hype, no bro-science — just science-backed information you can use.</p>
+            <div class="hero-stats">
+                <span><i class="fas fa-newspaper"></i> 30+ Articles</span>
+                <span><i class="fas fa-flask"></i> 2026 Research</span>
+                <span><i class="fas fa-users"></i> 100k+ Readers</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="page-container">
+
+        <!-- Featured Article -->
+        <div class="featured-article">
+            <span class="featured-label">🔥 Featured Article</span>
+            <div class="featured-content">
+                <div>
+                    <h2>Strength Training in 2026: New Research Reveals the Fastest Way to Build Muscle</h2>
+                    <p class="featured-excerpt">Latest 2026 research reveals optimal methods for muscle growth. Scientists identify the fastest way to build muscle based on new studies.</p>
+                    <div class="featured-meta">
+                        <span><i class="far fa-calendar-alt"></i> Feb 19, 2026</span>
+                        <span><i class="far fa-clock"></i> 10 min read</span>
+                    </div>
+                </div>
+                <a href="https://fitbosspro.com/strength-training-2026-research" class="read-more-btn">Read Featured Article</a>
+            </div>
+        </div>
+
+        <!-- Strength Training Section (6 articles) -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2>Strength Training</h2>
+                <a href="https://fitbosspro.com/category/strength">View All →</a>
+            </div>
+            <div class="articles-grid">
+                <!-- Article 1: Strength Training 2026 -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/strength-training-2026-research.webp')">
+                        <span class="article-category-badge">Strength</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/strength-training-2026-research">Strength Training in 2026: New Research Reveals the Fastest Way to Build Muscle</a></h3>
+                        <p class="article-excerpt">Latest 2026 research reveals optimal methods for muscle growth based on new studies.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 19, 2026</span>
+                            <span><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/strength-training-2026-research" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2: Push vs Pull vs Legs -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/push-pull-legs-split-2026.webp')">
+                        <span class="article-category-badge">Strength</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/push-pull-legs-split-2026">Push vs Pull vs Legs: Which Split Is Best?</a></h3>
+                        <p class="article-excerpt">2026 research analysis: Compare Push Pull Legs against Bro Split, Upper/Lower, and Full Body workouts.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> feb 21, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/push-pull-legs-split-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3: Bodyweight vs Weights -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/bodyweight-vs-weights-2026.webp')">
+                        <span class="article-category-badge">Strength</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/bodyweight-vs-weights-2026">Bodyweight vs Weights: Science Says One Builds Muscle Faster</a></h3>
+                        <p class="article-excerpt">2026 research settles the debate: Bodyweight training vs weight lifting. Scientists reveal which builds muscle faster.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/bodyweight-vs-weights-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4: Training Frequency -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/training-frequency-2026.webp')">
+                        <span class="article-category-badge">Strength</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/training-frequency-2026">How Often Should You Lift Weights? New Data Changes Everything</a></h3>
+                        <p class="article-excerpt">2026 research redefines optimal training frequency. Scientists reveal how many days per week you should lift.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 21, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/training-frequency-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5: Compound vs Isolation -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/compound-vs-isolation-2026.webp')">
+                        <span class="article-category-badge">Strength</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/compound-vs-isolation-2026">Compound vs Isolation Exercises: What Trainers Recommend in 2026</a></h3>
+                        <p class="article-excerpt">Latest 2026 research on exercise selection. Learn the optimal ratio of compound to isolation movements.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 22, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/compound-vs-isolation-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 6: Progressive Overload -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/progressive-overload-2026.webp')">
+                        <span class="article-category-badge">Strength</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/progressive-overload-2026">Why Progressive Overload Is Trending Again (And How to Do It Right)</a></h3>
+                        <p class="article-excerpt">2026 research confirms progressive overload as the #1 driver of muscle growth. Learn how to apply it.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> feb 21, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/progressive-overload-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Cardio Section (6 articles) -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2>Cardio</h2>
+                <a href="https://fitbosspro.com/category/cardio">View All →</a>
+            </div>
+            <div class="articles-grid">
+                <!-- Article 1: HIIT vs Steady-State -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/hiit-vs-steady-2026.webp')">
+                        <span class="article-category-badge">Cardio</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/hiit-vs-steady-2026">HIIT vs Steady-State Cardio: Which Burns More Fat in 2026?</a></h3>
+                        <p class="article-excerpt">2026 research settles the cardio debate. Scientists compare HIIT and steady-state for fat loss.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 19, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/hiit-vs-steady-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2: Walking 10,000 Steps -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/10000-steps-2026.webp')">
+                        <span class="article-category-badge">Cardio</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/10000-steps-2026">Walking 10,000 Steps a Day: Does It Still Matter?</a></h3>
+                        <p class="article-excerpt">2026 research re-examines the 10,000 steps goal. Scientists reveal the optimal step count for health.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 19, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/10000-steps-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3: Best Cardio for Fat Loss -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/cardio-fat-loss-ranked-2026.webp')">
+                        <span class="article-category-badge">Cardio</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/cardio-fat-loss-ranked-2026">Best Cardio Exercises for Fat Loss, Ranked by Science</a></h3>
+                        <p class="article-excerpt">2026 research ranks the most effective cardio exercises for fat loss. Scientists reveal which burns the most calories.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 19, 2026</span>
+                            <span><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/cardio-fat-loss-ranked-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4: Morning vs Evening Cardio -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/morning-vs-evening-cardio-2026.webp')">
+                        <span class="article-category-badge">Cardio</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/morning-vs-evening-cardio-2026">Morning vs Evening Cardio: New Studies Reveal the Best Time</a></h3>
+                        <p class="article-excerpt">2026 research compares morning and evening cardio for fat loss, performance, and health.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 19, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/morning-vs-evening-cardio-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5: Is Running Bad for Your Knees? -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/running-knees-2026.webp')">
+                        <span class="article-category-badge">Cardio</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/running-knees-2026">Is Running Bad for Your Knees? Latest Research Answers</a></h3>
+                        <p class="article-excerpt">2026 research settles the debate: Does running damage your knees? Scientists reveal the truth about running and joint health.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 19, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/running-knees-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 6: Cardio for Beginners -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/cardio-beginners-2026.webp')">
+                        <span class="article-category-badge">Cardio</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/cardio-beginners-2026">Cardio for Beginners: How to Start Without Burning Out</a></h3>
+                        <p class="article-excerpt">2026 research reveals the best way to start cardio as a beginner. Learn how to build endurance and stay consistent.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 19, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/cardio-beginners-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Nutrition Section (6 articles) -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2>Nutrition</h2>
+                <a href="https://fitbosspro.com/category/nutrition">View All →</a>
+            </div>
+            <div class="articles-grid">
+                <!-- Article 1: High-Protein Diet -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/high-protein-diet-2026.webp')">
+                        <span class="article-category-badge">Nutrition</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/high-protein-diet-2026">High-Protein Diet in 2026: Benefits, Risks, and Best Foods</a></h3>
+                        <p class="article-excerpt">2026 research reveals the truth about high-protein diets. Scientists explain optimal intake, benefits, and risks.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 10 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/high-protein-diet-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2: Intermittent Fasting vs Calorie Counting -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/fasting-vs-calories-2026.webp')">
+                        <span class="article-category-badge">Nutrition</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/fasting-vs-calories-2026">Intermittent Fasting vs Calorie Counting: Which Works Better?</a></h3>
+                        <p class="article-excerpt">2026 research compares intermittent fasting and calorie counting for weight loss. Scientists reveal which is more effective.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/fasting-vs-calories-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3: Best Foods for Muscle Growth -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/muscle-growth-foods-2026.webp')">
+                        <span class="article-category-badge">Nutrition</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/muscle-growth-foods-2026">Best Foods for Muscle Growth According to New Research</a></h3>
+                        <p class="article-excerpt">2026 research reveals the top foods for muscle growth. Scientists rank protein sources by amino acid profile.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/muscle-growth-foods-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4: Sugar vs Artificial Sweeteners -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/sugar-vs-sweeteners-2026.webp')">
+                        <span class="article-category-badge">Nutrition</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/sugar-vs-sweeteners-2026">Sugar vs Artificial Sweeteners: What Nutritionists Say Now</a></h3>
+                        <p class="article-excerpt">2026 research compares sugar and artificial sweeteners. Nutritionists reveal health impacts and which is truly better.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/sugar-vs-sweeteners-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5: Pre-Workout Nutrition -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/pre-workout-nutrition-2026.webp')">
+                        <span class="article-category-badge">Nutrition</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/pre-workout-nutrition-2026">Pre-Workout Nutrition: What to Eat for Maximum Performance</a></h3>
+                        <p class="article-excerpt">2026 research reveals the optimal pre-workout nutrition strategy. Scientists explain what to eat and when.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/pre-workout-nutrition-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 6: Post-Workout Meals -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/post-workout-meals-2026.webp')">
+                        <span class="article-category-badge">Nutrition</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/post-workout-meals-2026">Post-Workout Meals That Speed Up Recovery and Muscle Growth</a></h3>
+                        <p class="article-excerpt">2026 research reveals the optimal post-workout nutrition strategy for maximizing recovery and muscle growth.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/post-workout-meals-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Mindset Section (6 articles) -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2>Mindset</h2>
+                <a href="https://fitbosspro.com/category/mindset">View All →</a>
+            </div>
+            <div class="articles-grid">
+                <!-- Article 1: Mental Habits of People Who Stay Fit for Life -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/fitness-mental-habits-2026.webp')">
+                        <span class="article-category-badge">Mindset</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/fitness-mental-habits-2026">Mental Habits of People Who Stay Fit for Life</a></h3>
+                        <p class="article-excerpt">2026 research reveals the psychological patterns of lifelong fitness enthusiasts. Learn the mental habits that keep people consistent.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/fitness-mental-habits-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2: Discipline vs Motivation -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/discipline-vs-motivation-2026.webp')">
+                        <span class="article-category-badge">Mindset</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/discipline-vs-motivation-2026">Discipline vs Motivation: What Actually Builds a Fit Body</a></h3>
+                        <p class="article-excerpt">2026 research reveals the truth about discipline and motivation in fitness. Scientists explain what really drives long-term success.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/discipline-vs-motivation-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3: Fitness Motivation in 2026 -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/fitness-motivation-2026.webp')">
+                        <span class="article-category-badge">Mindset</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/fitness-motivation-2026">Fitness Motivation in 2026: How to Stay Consistent Without Burnout</a></h3>
+                        <p class="article-excerpt">2026 research reveals how to maintain fitness motivation and avoid burnout. Science-backed strategies for lasting consistency.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/fitness-motivation-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4: Why Most People Quit the Gym -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/quit-gym-2026.webp')">
+                        <span class="article-category-badge">Mindset</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/quit-gym-2026">Why Most People Quit the Gym (And How to Avoid It)</a></h3>
+                        <p class="article-excerpt">2026 research reveals why 50% of people quit the gym within 6 months. Learn science-backed strategies to stay consistent.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/quit-gym-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5: How Stress Affects Fat Loss and Muscle Growth -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/stress-fat-muscle-2026.webp')">
+                        <span class="article-category-badge">Mindset</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/stress-fat-muscle-2026">How Stress Affects Fat Loss and Muscle Growth</a></h3>
+                        <p class="article-excerpt">2026 research reveals how stress hormones impact body composition. Scientists explain why stress sabotages fat loss and muscle gain.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/stress-fat-muscle-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 6: The Psychology of Fitness -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/fitness-psychology-2026.webp')">
+                        <span class="article-category-badge">Mindset</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/fitness-psychology-2026">The Psychology of Fitness: Why Small Wins Matter More</a></h3>
+                        <p class="article-excerpt">2026 research reveals the psychology behind fitness success. Scientists explain why celebrating small wins is key to long-term consistency.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 20, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/fitness-psychology-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Recovery Section (6 articles) -->
+        <section class="category-section">
+            <div class="category-header">
+                <h2>Recovery</h2>
+                <a href="https://fitbosspro.com/category/recovery">View All →</a>
+            </div>
+            <div class="articles-grid">
+                <!-- Article 1: Muscle Recovery in 2026 -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/muscle-recovery-2026.webp')">
+                        <span class="article-category-badge">Recovery</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/muscle-recovery-2026">Muscle Recovery in 2026: What Science Says Actually Works</a></h3>
+                        <p class="article-excerpt">2026 research reveals the most effective muscle recovery strategies. Scientists separate proven methods from myths.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 21, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/muscle-recovery-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2: How Much Rest Between Workouts -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/rest-between-workouts-2026.webp')">
+                        <span class="article-category-badge">Recovery</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/rest-between-workouts-2026">How Much Rest Do You Really Need Between Workouts?</a></h3>
+                        <p class="article-excerpt">2026 research reveals optimal rest between workouts for muscle growth, strength, and recovery.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 21, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/rest-between-workouts-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3: Sleep and Fitness -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/sleep-recovery-2026.webp')">
+                        <span class="article-category-badge">Recovery</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/sleep-recovery-2026">Sleep and Fitness: Why Recovery Is More Important Than Training</a></h3>
+                        <p class="article-excerpt">2026 research reveals why sleep and recovery are the true drivers of fitness progress. Scientists explain how recovery beats training intensity.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 21, 2026</span>
+                            <span><i class="far fa-clock"></i> 9 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/sleep-recovery-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4: Active Recovery vs Complete Rest -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/active-recovery-vs-rest-2026.webp')">
+                        <span class="article-category-badge">Recovery</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/active-recovery-vs-rest-2026">Active Recovery vs Complete Rest: Which Is Better?</a></h3>
+                        <p class="article-excerpt">2026 research compares active recovery and complete rest for muscle recovery, soreness, and performance.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 21, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/active-recovery-vs-rest-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5: Foam Rolling Benefits -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/foam-rolling-2026.webp')">
+                        <span class="article-category-badge">Recovery</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/foam-rolling-2026">Foam Rolling Benefits: Does It Really Speed Up Recovery?</a></h3>
+                        <p class="article-excerpt">2026 research examines foam rolling benefits for muscle recovery. Scientists reveal whether foam rolling actually works.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 21, 2026</span>
+                            <span><i class="far fa-clock"></i> 7 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/foam-rolling-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 6: Signs You're Overtraining -->
+                <article class="article-card">
+                    <div class="article-image" style="background-image: url('https://fitbosspro.com/img/overtraining-signs-2026.webp')">
+                        <span class="article-category-badge">Recovery</span>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://fitbosspro.com/overtraining-signs-2026">Signs You're Overtraining (And How to Fix It Fast)</a></h3>
+                        <p class="article-excerpt">2026 research reveals the warning signs of overtraining syndrome. Scientists explain how to recognize overtraining and recover quickly.</p>
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar-alt"></i> Feb 21, 2026</span>
+                            <span><i class="far fa-clock"></i> 8 min</span>
+                        </div>
+                        <a href="https://fitbosspro.com/overtraining-signs-2026" class="article-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-section">
+            <h2>Get Latest Fitness Research</h2>
+            <p>Subscribe to our newsletter and get evidence-based articles delivered to your inbox.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About FitBoss Pro</h3>
+                <p>Evidence-based fitness information. Translating complex research into actionable advice.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="https://fitbosspro.com/">Home</a></p>
+                <p><a href="https://fitbosspro.com/about">About Us</a></p>
+                <p><a href="https://fitbosspro.com/contact">Contact</a></p>
+                <p><a href="https://fitbosspro.com/privacy-policy">Privacy Policy</a></p>
+                <p><a href="https://fitbosspro.com/terms-of-service">Terms of Service</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="https://fitbosspro.com/category/strength">Strength Training</a></li>
+                    <li><a href="https://fitbosspro.com/category/cardio">Cardio</a></li>
+                    <li><a href="https://fitbosspro.com/category/nutrition">Nutrition</a></li>
+                    <li><a href="https://fitbosspro.com/category/mindset">Mindset</a></li>
+                    <li><a href="https://fitbosspro.com/category/recovery">Recovery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FitBoss Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Newsletter form submission
+        const newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = newsletterForm.querySelector('input[type="email"]').value;
+                alert(`Thank you for subscribing with: ${email}`);
+                newsletterForm.reset();
+            });
+        }
+    </script>
+</body>
+</html>

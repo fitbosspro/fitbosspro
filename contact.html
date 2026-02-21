@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | FitBoss Pro - Get in Touch</title>
+    
+    <!-- Meta Properties -->
+    <meta name="description" content="Contact FitBoss Pro for questions, feedback, or collaboration opportunities. We're here to help with your evidence-based fitness journey.">
+    <meta name="keywords" content="contact FitBoss Pro, fitness questions, support, collaboration">
+    <meta name="author" content="FitBoss Pro">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Us | FitBoss Pro">
+    <meta property="og:description" content="Contact FitBoss Pro for questions, feedback, or collaboration opportunities. We're here to help with your evidence-based fitness journey.">
+    <meta property="og:image" content="https://fitbosspro.com/img/contact-us-2026.webp">
+    <meta property="og:url" content="https://fitbosspro.com/contact">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FitBoss Pro">
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://fitbosspro.com/contact">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://fitbosspro.com/favicon.ico">
+    <link rel="apple-touch-icon" href="https://fitbosspro.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://fitbosspro.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://fitbosspro.com/favicon-16x16.png">
+    
+    <!-- Schema Markup - ContactPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact FitBoss Pro",
+        "description": "Get in touch with FitBoss Pro for questions, feedback, or collaboration opportunities.",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "FitBoss Pro",
+            "url": "https://fitbosspro.com",
+            "logo": "https://fitbosspro.com/logo.png",
+            "email": "info@fitbosspro.com",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-555-123-4567",
+                "contactType": "customer service",
+                "email": "info@fitbosspro.com",
+                "availableLanguage": ["English"]
+            },
+            "sameAs": [
+                "https://www.facebook.com/fitbosspro",
+                "https://www.instagram.com/fitbosspro",
+                "https://twitter.com/fitbosspro",
+                "https://www.youtube.com/fitbosspro"
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://fitbosspro.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://fitbosspro.com/contact"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Font Awesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Base styles (same as articles) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background-color: #fafafa;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Site Header */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 0.8rem 0;
+            /* position: sticky; */
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #ffd700;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        .nav-links.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 1rem 0;
+            gap: 1rem;
+            list-style: none;
+            z-index: 999;
+        }
+
+        .nav-links.active li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav-links.active a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        /* Page Container */
+        .page-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Breadcrumbs */
+        .breadcrumbs {
+            margin-bottom: 2rem;
+            font-size: 0.85rem;
+            color: #666;
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 0.3rem;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .breadcrumbs a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+
+        .breadcrumbs span {
+            margin: 0 0.3rem;
+            color: #999;
+        }
+
+        /* Page Header */
+        .page-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .page-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Contact Grid */
+        .contact-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem 0;
+            width: 100%;
+        }
+
+        /* Contact Info Cards */
+        .info-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .info-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .info-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .info-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a1a;
+        }
+
+        .info-card p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-card a {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .info-card a:hover {
+            color: #1e3c72;
+            text-decoration: underline;
+        }
+
+        .info-note {
+            font-size: 0.85rem;
+            color: #999;
+            margin-top: 0.5rem;
+        }
+
+        /* Contact Form */
+        .form-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            width: 100%;
+        }
+
+        .form-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+            width: 100%;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 500;
+            color: #1a1a1a;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2a5298;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .checkbox-group input {
+            width: auto;
+            margin-top: 0.2rem;
+        }
+
+        .checkbox-group label {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Social Cards */
+        .social-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+            width: 100%;
+        }
+
+        .social-card {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .social-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .facebook .social-icon {
+            background: #1877f2;
+        }
+
+        .instagram .social-icon {
+            background: #e4405f;
+        }
+
+        .twitter .social-icon {
+            background: #1da1f2;
+        }
+
+        .youtube .social-icon {
+            background: #ff0000;
+        }
+
+        .social-content {
+            flex: 1;
+        }
+
+        .social-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+            color: #1a1a1a;
+        }
+
+        .social-content p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .social-link {
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        /* FAQ Section */
+        .faq-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem 0;
+            width: 100%;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+            width: 100%;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .faq-answer {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .cta-section p {
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: #ffd700;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 2rem 1rem 1rem;
+            margin-top: 3rem;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+        }
+
+        .footer-section {
+            width: 100%;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 0.8rem;
+            color: #ffd700;
+            font-size: 1.1rem;
+        }
+
+        .footer-section p {
+            margin-bottom: 0.5rem;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.4rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #333;
+            color: #ccc;
+            font-size: 0.8rem;
+            width: 100%;
+        }
+
+        /* Tablet and up */
+        @media (min-width: 768px) {
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .hamburger {
+                display: none;
+            }
+            
+            .nav-links {
+                display: flex;
+                list-style: none;
+                gap: 1.5rem;
+                position: static;
+                width: auto;
+                background: transparent;
+                padding: 0;
+            }
+            
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                font-size: 0.9rem;
+            }
+            
+            .page-header h1 {
+                font-size: 2.8rem;
+            }
+            
+            .contact-grid {
+                display: grid;
+                grid-template-columns: 1fr 1.5fr;
+                gap: 2rem;
+            }
+            
+            .info-grid {
+                gap: 1rem;
+            }
+            
+            .form-row {
+                flex-direction: row;
+                gap: 1rem;
+            }
+            
+            .form-row .form-group {
+                flex: 1;
+            }
+            
+            .social-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            
+            .faq-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            
+            .footer-content {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fit<span>Boss</span> Pro</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="https://fitbosspro.com/">Home</a></li>
+                <li><a href="https://fitbosspro.com/category/strength">Strength Training</a></li>
+                <li><a href="https://fitbosspro.com/category/cardio">Cardio</a></li>
+                <li><a href="https://fitbosspro.com/category/nutrition">Nutrition</a></li>
+                <li><a href="https://fitbosspro.com/category/mindset">Mindset</a></li>
+                <li><a href="https://fitbosspro.com/category/recovery">Recovery</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="https://fitbosspro.com/">Home</a>
+            <span>›</span>
+            <span>Contact Us</span>
+        </div>
+
+        <!-- Page Header -->
+        <header class="page-header">
+            <h1>Contact Us</h1>
+            <p style="color: #eaeaea;">Have questions, feedback, or collaboration ideas? We'd love to hear from you. Reach out using any of the methods below.</p>
+        </header>
+
+        <!-- Contact Grid: Info + Form -->
+        <div class="contact-grid">
+            <!-- Left Column: Contact Info -->
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="form-card">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" placeholder="Doe" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" placeholder="john.doe@example.com" required>
+                    </div>
+
+                    
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Question</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="collaboration">Collaboration / Partnership</option>
+                            <option value="support">Support</option>
+                            <option value="media">Media Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" placeholder="How can we help you?" required></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" checked>
+                        <label for="newsletter">Subscribe to our newsletter for evidence-based fitness tips</label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="privacy" required>
+                        <label for="privacy">I agree to the <a href="https://fitbosspro.com/privacy-policy" style="color: #2a5298;">Privacy Policy</a> and consent to having my data processed *</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <!-- <h2 style="font-size: 1.6rem; margin: 2rem 0 1rem; color: #1a1a1a;">Connect With Us</h2>
+        <div class="social-grid">
+            <div class="social-card facebook">
+                <div class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="social-content">
+                    <h3>Facebook</h3>
+                    <p>Follow us for daily tips and updates</p>
+                    <a href="#" class="social-link">facebook.com/fitbosspro</a>
+                </div>
+            </div>
+
+            <div class="social-card instagram">
+                <div class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="social-content">
+                    <h3>Instagram</h3>
+                    <p>Visual guides and workout demos</p>
+                    <a href="#" class="social-link">@fitbosspro</a>
+                </div>
+            </div>
+
+            <div class="social-card twitter">
+                <div class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="social-content">
+                    <h3>X (Twitter)</h3>
+                    <p>Quick research updates and threads</p>
+                    <a href="#" class="social-link">@fitbosspro</a>
+                </div>
+            </div>
+
+            <div class="social-card youtube">
+                <div class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <div class="social-content">
+                    <h3>YouTube</h3>
+                    <p>Exercise tutorials and deep dives</p>
+                    <a href="#" class="social-link">youtube.com/fitbosspro</a>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- FAQ Section -->
+        <h2 style="font-size: 1.6rem; margin: 2rem 0 1rem; color: #1a1a1a;">Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">How quickly do you respond to emails?</div>
+                <div class="faq-answer">We aim to respond to all emails within 24-48 hours during business days. For urgent matters, phone calls or social media DMs may get a faster response.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Do you offer personal training or coaching?</div>
+                <div class="faq-answer">Currently, we focus on providing evidence-based information through our articles. We don't offer one-on-coaching, but we can recommend qualified professionals in your area.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I contribute an article to FitBoss Pro?</div>
+                <div class="faq-answer">We welcome guest contributions from qualified professionals. Please email us with your credentials and article ideas for review.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Do you accept advertising or sponsorships?</div>
+                <div class="faq-answer">Yes, we carefully vet partners who align with our evidence-based mission. Contact us for our media kit and advertising guidelines.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Where do you get your research?</div>
+                <div class="faq-answer">We review peer-reviewed studies from journals like Journal of Strength and Conditioning Research, Sports Medicine, Medicine & Science in Sports & Exercise, and others.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I suggest a topic for an article?</div>
+                <div class="faq-answer">Absolutely! We love reader suggestions. Use the contact form to let us know what you'd like to learn about.</div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>Browse Our Evidence-Based Articles</h2>
+            <p>While you wait for a response, check out our latest research-backed content.</p>
+            <a href="https://fitbosspro.com/" class="cta-button">Explore Articles</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About FitBoss Pro</h3>
+                <p>Evidence-based fitness information. Translating complex research into actionable advice.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="https://fitbosspro.com/">Home</a></p>
+                <p><a href="https://fitbosspro.com/about">About Us</a></p>
+                <p><a href="https://fitbosspro.com/contact">Contact</a></p>
+                <p><a href="https://fitbosspro.com/privacy-policy">Privacy Policy</a></p>
+                <p><a href="https://fitbosspro.com/terms-of-service">Terms of Service</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="https://fitbosspro.com/category/strength">Strength Training</a></li>
+                    <li><a href="https://fitbosspro.com/category/cardio">Cardio</a></li>
+                    <li><a href="https://fitbosspro.com/category/nutrition">Nutrition</a></li>
+                    <li><a href="https://fitbosspro.com/category/mindset">Mindset</a></li>
+                    <li><a href="https://fitbosspro.com/category/recovery">Recovery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FitBoss Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Contact form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            
+            alert(`Thank you ${firstName} ${lastName} for contacting us! We'll respond to ${email} within 24-48 hours.`);
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
