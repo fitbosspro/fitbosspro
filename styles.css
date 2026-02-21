@@ -57,6 +57,10 @@ header {
             letter-spacing: -0.5px;
         }
 
+        .logo a {
+            text-decoration: none;
+            color: white;
+        }
         .logo span {
             color: #ffd700;
         }
