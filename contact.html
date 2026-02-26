@@ -718,65 +718,229 @@
             <p style="color: #eaeaea;">Have questions, feedback, or collaboration ideas? We'd love to hear from you. Reach out using any of the methods below.</p>
         </header>
 
-        <!-- Contact Grid: Info + Form -->
-        <div class="contact-grid">
-            <!-- Left Column: Contact Info -->
-            </div>
+        <!-- Styled Contact Form for FitLife Pro -->
+<form
+  action="https://formspree.io/f/xreajygk"
+  method="POST"
+  class="contact-form"
+>
+  <div class="form-group">
+    <label for="email">Your Email *</label>
+    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+  </div>
 
-            <!-- Right Column: Contact Form -->
-            <div class="form-card">
-                <h2>Send Us a Message</h2>
-                <form id="contactForm">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" id="firstName" placeholder="John" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" placeholder="Doe" required>
-                        </div>
-                    </div>
+  <div class="form-group">
+    <label for="message">Your Message *</label>
+    <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+  </div>
 
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" placeholder="john.doe@example.com" required>
-                    </div>
+  <button type="submit" class="submit-btn">Send Message</button>
+</form>
 
-                    
+<style>
+  .contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
 
-                    <div class="form-group">
-                        <label for="subject">Subject *</label>
-                        <select id="subject" required>
-                            <option value="">Select a subject</option>
-                            <option value="general">General Question</option>
-                            <option value="feedback">Feedback</option>
-                            <option value="collaboration">Collaboration / Partnership</option>
-                            <option value="support">Support</option>
-                            <option value="media">Media Inquiry</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
+  .form-group {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
 
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" placeholder="How can we help you?" required></textarea>
-                    </div>
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    font-size: 0.95rem;
+  }
 
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="newsletter" checked>
-                        <label for="newsletter">Subscribe to our newsletter for evidence-based fitness tips</label>
-                    </div>
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s;
+    background: #fafafa;
+  }
 
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="privacy" required>
-                        <label for="privacy">I agree to the <a href="https://fitbosspro.com/privacy-policy" style="color: #2a5298;">Privacy Policy</a> and consent to having my data processed *</label>
-                    </div>
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #2a5298;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.1);
+  }
 
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
-        </div>
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #999;
+    font-size: 0.95rem;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .submit-btn:active {
+    transform: translateY(0);
+  }
+
+  /* Success message styling */
+  .form-success {
+    background: #e3f5e9;
+    color: #28a745;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #28a745;
+    font-size: 0.95rem;
+  }
+
+  .form-error {
+    background: #fff3f3;
+    color: #dc3545;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #dc3545;
+    font-size: 0.95rem;
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 1.5rem;
+    }
+  }
+
+  /* Optional: Add a small note about privacy */
+  .form-note {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1rem;
+    text-align: center;
+  }
+</style>
+
+<!-- Optional JavaScript for enhanced UX -->
+<script>
+  (function() {
+    const contactForm = document.querySelector('.contact-form');
+    
+    if (!contactForm) return;
+    
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(contactForm);
+      const email = formData.get('email');
+      const message = formData.get('message');
+      
+      // Remove any existing messages
+      const existingMessages = contactForm.querySelectorAll('.form-success, .form-error');
+      existingMessages.forEach(msg => msg.remove());
+      
+      // Basic validation
+      if (!email || !email.trim()) {
+        showMessage('Please enter your email address', 'error');
+        return;
+      }
+      
+      if (!message || !message.trim()) {
+        showMessage('Please enter your message', 'error');
+        return;
+      }
+      
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        showMessage('Please enter a valid email address', 'error');
+        return;
+      }
+      
+      // Show loading state
+      const submitBtn = contactForm.querySelector('.submit-btn');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+      
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          showMessage('Thank you for your message! We\'ll get back to you within 24-48 hours.', 'success');
+          contactForm.reset();
+        } else {
+          const data = await response.json();
+          throw new Error(data.error || 'Form submission failed');
+        }
+      } catch (error) {
+        console.error('Form error:', error);
+        showMessage('Something went wrong. Please try again or email us directly at info@fitlifepro.com', 'error');
+      } finally {
+        // Restore button state
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
+    });
+    
+    function showMessage(text, type) {
+      const messageDiv = document.createElement('div');
+      messageDiv.className = type === 'success' ? 'form-success' : 'form-error';
+      messageDiv.textContent = text;
+      contactForm.prepend(messageDiv);
+      
+      // Auto-remove after 5 seconds for success, keep errors visible
+      if (type === 'success') {
+        setTimeout(() => {
+          messageDiv.remove();
+        }, 5000);
+      }
+    }
+  })();
+</script>
+
+<!-- Optional privacy note (uncomment if needed) -->
+<!-- <div class="form-note">
+  We'll never share your email with anyone else.
+</div> -->
 
         <!-- Social Media Section -->
         <!-- <h2 style="font-size: 1.6rem; margin: 2rem 0 1rem; color: #1a1a1a;">Connect With Us</h2>
